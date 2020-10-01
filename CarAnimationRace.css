@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow: hidden;
+    animation: shakebody linear 4s infinite;
+}
+
+.sky{
+    height: 100vh;
+    width: 100%;
+    background-image: url(back.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.trees{
+    height: 134vh;
+    width: 100%;
+    background-image: url(trees.png);
+    background-size: cover;
+    position: absolute;
+    top: -651px;
+}
+
+.tracks{
+    height: 60vh;
+    width: 800vw;
+    background-image: url(track.png);
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 70vh;
+    animation: trackmove linear 10s infinite;
+}
+
+.lets{
+    height: 8vh;
+    width: 5vw;
+    background-image: url(lets_do_this.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 683px;
+    left: 1423px;
+}
+
+.car1{
+    height: 163px;
+    width: 538px;
+    background-image: url(car_body.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -76px;
+    bottom: 24vh;
+    animation: carmove linear 8s infinite;
+}
+
+.car2{
+    height: 118px;
+    width: 500px;
+    background-image: url(avent_body.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -53px;
+    bottom: 8vh;
+    animation: carmove linear 6s infinite;
+}
+
+.wheel3 img{
+    width: 110px;
+    position: relative;
+    top: 31px;
+    left: 34px;
+    animation: wheelrotation linear .6s infinite;
+}
+
+.wheel4 img{
+    width: 112px;
+    position: relative;
+    top: -81px;
+    left: 338px;
+    animation: wheelrotation linear .6s infinite;
+}
+
+.wheel1 img{
+    width: 112px;
+    position: relative;
+    top: 57px;
+    left: 71px;
+    animation: wheelrotation linear .6s infinite;
+}
+
+.wheel2 img{
+    width: 119px;
+    position: relative;
+    top: -54px;
+    left: 352px;
+    animation: wheelrotation linear .6s infinite;
+}
+
+@keyframes wheelrotation
+{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes trackmove
+{
+    100%{
+        transform: translateX(-500vw);
+    }
+}
+
+@keyframes carmove
+{
+    100%{
+        transform: translateX(500vw);
+    }
+}
+
+@keyframes shakebody
+{
+    0%{
+        transform: translateY(-50px);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(-50px);
+    }
+}
